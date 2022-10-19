@@ -1,52 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0502 孙嘉俊</title>
-    <style>
-        .main{
-            width :1200px;
-        }
-        .inner{
-            width: 140px;
-            height: 140px;
-            background-color: blue;
-            float: left;
-            margin: 20px;
-        }
-        .inner:first-of-type:hover{
-            transform: rotate(45deg);
-            /*旋转*/
-        }
-        .inner:nth-of-type(2):hover{
-            transform: scale(0.4);
-        }
-        .inner:nth-child(3):hover{
-            transform: scale(1.6);
-        }
-        .inner:nth-child(4):hover{
-            transform: skew(30deg);
-        }
-        .inner:nth-child(5):hover{
-            transform: matrix(0.6,0);
-        }
-        .inner:last-of-type:hover{
-            transform: translate(30px,200px);
-        }
-    </style>
+<meta charset="utf-8">
+<title>0502_孙嘉俊</title>
+<style>
+    table{
+        border: 1px;
+    }
+
+    .div1{
+    
+        width: 300px;
+        height: 250px;
+        background: url(img/1.jpg);
+        background-size: 300px 300px;
+    }
+    .div2{
+        border: 1;
+        width: 300px;
+        height: 250px;
+        background: url(img/2.jpg);
+        background-size: 300px 300px;
+    }
+    .div3{
+        border: 1;
+        width: 300px;
+        height: 250px;
+        background: url(img/3.jpg);
+        background-size:300px 300px;
+    }
+    .img1{
+        width:52px;
+        height:52px;
+    }
+    .float-div{
+        float: left;
+    }
+
+    td{
+        text-align: center;
+        
+    }
+    .tr1{
+        font-size: 21px;
+    }
+    .tr2{
+        font-size: 21px;
+        color: rgb(255, 255, 255);
+    }
+    .tr3{
+        font-size: 21px;
+        color: red;
+    }
+</style>
 </head>
 <body>
-    <div class ="main">
-        <div class ="box">
-            <div class="inner"></div>
-            <div class="inner"></div>
-            <div class="inner"></div>
-            <div class="inner"></div>
-            <div class="inner"></div>
-            <div class="inner"></div>
+    <table  align="center" border="1">
+        <tr >
+            
+            <td>	
+                <div class="div1 float-div">
+                <div><img src="img/4.png" class="img1 float-div"></div>
+                </div>
+            </td>
+                
+            <td>	
+                <div class="div2 float-div">
+                <div><img src="img/5.png" class="img1  float-div"></div>
+                </div>
+            </td>	
+                
+            <td>	
+                <div class="div3 float-div">
+            </td>
+
         </div>
-    </div>
+    
+        </tr>
+        
+        <tr class="tr1">
+            
+            <td>荣耀畅玩5</td>
+            <td>荣耀畅玩5C</td>
+            <td>华为畅享5s</td>
+        </tr>
+        <tr class="tr2">
+            <td>惊艳小屏</td>
+            <td>真芯长续航</td>
+            <td>轻薄金属机身</td>
+        </tr>
+        <tr class="tr3">
+            <td>￥&nbsp;599</td>
+            <td>￥&nbsp;1099</td>
+            <td>￥&nbsp;1099</td>
+        </tr>
+    </table>
 </body>
 </html>
